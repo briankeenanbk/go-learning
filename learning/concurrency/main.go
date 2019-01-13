@@ -10,6 +10,16 @@ var wg sync.WaitGroup
 
 func main() {
 	fmt.Println("concurrency main")
+	var counter = struct {
+		sync.RWMutex
+		m map[string]int
+	}{m: make(map[string]int)}
+
+	fmt.Println(counter)
+	fmt.Printf("%T\n", counter)
+	counter.Lock()
+	counter.m["brian"] = 7
+
 	wg.Add(4)
 	go startWebServer()
 	go startMessageServer()
