@@ -69,7 +69,7 @@ func (d Dctory) printSortedByNumber() {
 
 }
 
-func main() {
+func notmain() {
 	var d Dctory
 	d.phone = getPhoneDctoryectory()
 	fmt.Println(d)
@@ -89,6 +89,8 @@ func main() {
 	fmt.Println("got phone number", p, "for brian")
 
 	d.printPhoneNumbers()
+	sortingmap()
+	Sortit()
 
 }
 

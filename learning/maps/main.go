@@ -23,4 +23,7 @@ func main() {
 	p := person{"brian", "hello"}
 	p.talk()
 	talk(p)
+	sortingmap()
+	Sortit()
+
 }

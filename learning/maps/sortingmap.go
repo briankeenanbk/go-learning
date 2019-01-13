@@ -5,10 +5,7 @@ import (
 	"sort"
 )
 
-type Dctory struct {
-	phone map[string]int
-}
-
+/***
 func (d Dctory) getPhoneNumberFor(name string) int {
 	if v, ok := d.phone[name]; ok {
 		return v
@@ -68,8 +65,9 @@ func (d Dctory) printSortedByNumber() {
 	}
 
 }
+***/
 
-func main() {
+func sortingmap() {
 	var d Dctory
 	d.phone = getPhoneDirectory()
 	fmt.Println(d)
