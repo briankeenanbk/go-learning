@@ -5,6 +5,7 @@ import (
 	maybe "github.com/briankeenanbk/go-learn/learning"
 )
 
+//main
 func main() {
 	var value maybe.Export
 	value.DoMagic()

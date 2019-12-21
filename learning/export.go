@@ -5,6 +5,7 @@ import "fmt"
 type Export struct {
 }
 
+//DoMagic
 func (c Export) DoMagic() {
 	fmt.Println("Magic function was called")
 }
