@@ -37,7 +37,7 @@ func main() {
 	// executing
 	defer con.db.Close()
 
-	con.insert, err = con.db.Query("INSERT INTO testtable VALUES ( 'TEST9', 'TEST' )")
+	con.insert, err = con.db.Query("INSERT INTO testtable VALUES ( 'TEST10', 'TEST' )")
 	fmt.Printf("insert =%T\n", con.insert)
 
 	// if there is an error inserting, handle it
